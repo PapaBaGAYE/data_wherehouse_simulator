@@ -10,11 +10,11 @@ include('database/database.php');
 
     $date = $jour.$mois.$annee;
 
-    if($sexe == "homme" or $sexe == "1")
+    if($sexe == "homme" or $sexe == "1" or $sexe == "Homme")
     {
         $sexe = 'h';
     }
-    elseif($sexe == "femme" or $sexe == "0")
+    elseif($sexe == "femme" or $sexe == "0" or $sexe == "Femme")
     {
         $sexe = 'f';
     }
