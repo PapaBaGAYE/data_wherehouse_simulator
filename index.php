@@ -23,10 +23,10 @@
 
             <div class="col-md-6">
                 <form>
-                    <label for="nom">Entrer votre nom</label>
+                    <label for="nom"><b>Entrer votre nom</b></label>
                     <input type="text" class="form-control" id="nom" placeholder="Entrer votre nom">
 
-                    <label for="sexe">Choisir le sexe</label>
+                    <label for="sexe"><b>Choisir le sexe</b></label>
                     <select id="sexe" name="sexe" class="form-control">
                         <option>homme</option>
                         <option>femme</option>
@@ -109,10 +109,10 @@
                         <table class="table">
                             <thead class="bg-dark text-light">
                                 <tr>
+                                    <th>Date</th>
                                     <th>Nom</th>
                                     <th>Sexe</th>
-                                    <!-- <th>Situation</th>
-                                    <th>Mail</th> -->
+                                    <!-- <th>Situation</th> -->
                                     <th colspan="2">Actions</th>
                                 </tr>
                             </thead>
@@ -126,6 +126,7 @@
                                     {
                                 ?>
                                 <tr>
+                                    <td><?php echo $data['date']; ?></td>
                                     <td><?php echo $data['nom']; ?></td>
                                     <td><?php echo $data['sexe']; ?></td>
                                     
@@ -151,6 +152,7 @@
                         <table class="table">
                             <thead class="bg-dark text-light">
                                 <tr>
+                                    <th>Date</th>
                                     <th>Nom</th>
                                     <th>Sexe</th>
                                     <th colspan="2">Actions</th>
@@ -166,8 +168,9 @@
                                     {
                                 ?>
                                 <tr>
-                                    <td><?php echo $data['nom']; ?></td>
-                                    <td><?php echo $data['sexe']; ?></td>
+                                    <td><?php echo $data['date']; ?></td>
+                                    <td><?php echo $data['nom'] ; ?></td>
+                                    <td style='font-weight:bold;' class='text-success'><?php echo $data['sexe']; ?></td>
                                     
                                     <td>
                                     <!-- <a href="update.php?update=<?php echo $data["id"];?>" class="btn btn-success" style="font-size: 13px;">Update</a> -->
