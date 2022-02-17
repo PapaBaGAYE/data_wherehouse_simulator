@@ -32,6 +32,8 @@
                         <option>femme</option>
                         <option>h</option>
                         <option>f</option>
+                        <option>Homme</option>
+                        <option>Femme</option>
                         <option>1</option>
                         <option>0</option>
                     </select>
